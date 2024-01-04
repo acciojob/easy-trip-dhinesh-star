@@ -20,7 +20,7 @@ public class AirportRepository {
     HashMap<Integer, List<Passenger>> flightPassengerDB = new HashMap<>();
     public String addAirport(Airport airport) throws Exception{
         airportDB.put(airport.getAirportName(),airport);
-        return "Success";
+        return "SUCCESS";
     }
     public String addPassenger(Passenger passenger) throws Exception{
         if(passengerDB.containsKey(passenger)==false){
